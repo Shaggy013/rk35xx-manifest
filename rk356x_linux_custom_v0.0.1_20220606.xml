@@ -86,7 +86,7 @@
    <project path="drm-cursor" name="external/drm-cursor" remote="JeffyCN" />
    <project path="rkwifibt-app" name="external/rkwifibt-app" upstream="Quartz64" remote="Shaggy013" />
    <project path="rockchip-test" name="external/rockchip-test" upstream="Quartz64" remote="Shaggy013" />
-   <project path="xorg-xserver" path="external/xserver" revision="fe6b8809881a2577c462d089176c56f686c50f1f" upstream="1.20.4" remote="JeffyCN" />
+   <project path="xorg-xserver" name="external/xserver" revision="fe6b8809881a2577c462d089176c56f686c50f1f" upstream="1.20.4" remote="JeffyCN" />
 
   <!--yocto project-->
   <project name="yocto-conf" path="yocto/build/conf" revision="a63afceec15834ecad9c710ed5dafaec458e1024" upstream="honister" remote="JeffyCN">	  
