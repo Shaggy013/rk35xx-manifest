@@ -20,7 +20,7 @@
   <project path="app/qplayer" name="qplayer" />              
   <project path="app/rkaiq_tool_server" name="rkaiq_tool_server" revision="884a93fb05376e4b9c357a63c3de59fc3320ac23" upstream="socket" />
   <project path="app/qsetting" name="qsetting" revision="8137aca3945c1d5b59a01aa1d60790f003627175" upstream="Quartz64" remote="Shaggy013" />
-  <project path="buildroot-rk356x" name="buildroot" revision="e84615699d3a425a65b40015b5df993590ce0a85" upstream="2018.02-rc3" >
+  <project path="buildroot-rk356x" name="buildroot" revision="e84615699d3a425a65b40015b5df993590ce0a85" upstream="rockchip/2018.02-rc3" >
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
@@ -81,12 +81,12 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
   </project>
-  <project name="u-boot" upstream="next-dev" />
+  <project name="u-boot" revision="55af3b349b87496f726992ac5049437b71e9ddd6" upstream="next-dev" />
    <!--RK3588-packages-->
-   <project path="drm-cursor" name="external/drm-cursor" remote="JeffyCN" />
-   <project path="rkwifibt-app" name="external/rkwifibt-app" upstream="Quartz64" remote="Shaggy013" />
-   <project path="rockchip-test" name="external/rockchip-test" upstream="Quartz64" remote="Shaggy013" />
-   <project path="xorg-xserver" name="external/xserver" revision="fe6b8809881a2577c462d089176c56f686c50f1f" upstream="1.20.4" remote="JeffyCN" />
+   <project name="drm-cursor" path="external/drm-cursor" remote="JeffyCN" />
+   <project name="rkwifibt-app" path="external/rkwifibt-app" revision="40a37d013d44ab24f45b441cb4193a9608e3d952" upstream="Quartz64" remote="Shaggy013" />
+   <project name="rockchip-test" path="external/rockchip-test" revision="0ee09bd5f8db4ddf322acdf49e9f760a9a001186" upstream="Quartz64" remote="Shaggy013" />
+   <project name="xorg-xserver" path="external/xserver" revision="da4c876d26c5d32dfc10e2810a7c4d64bb223833" upstream="1.20.4" remote="JeffyCN" />
 
   <!--yocto project-->
   <project name="yocto-conf" path="yocto/build/conf" revision="a63afceec15834ecad9c710ed5dafaec458e1024" upstream="honister" remote="JeffyCN">	  
