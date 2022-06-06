@@ -20,11 +20,11 @@
   <project path="app/qplayer" name="qplayer" />              
   <project path="app/rkaiq_tool_server" name="rkaiq_tool_server" revision="884a93fb05376e4b9c357a63c3de59fc3320ac23" upstream="socket" />
   <project path="app/qsetting" name="qsetting" revision="8137aca3945c1d5b59a01aa1d60790f003627175" upstream="Quartz64" remote="Shaggy013" />
-  <project path="buildroot-rk356x" name="buildroot" revision="e84615699d3a425a65b40015b5df993590ce0a85" upstream="2018.02-rc3" />
+  <project path="buildroot-rk356x" name="buildroot" revision="e84615699d3a425a65b40015b5df993590ce0a85" upstream="2018.02-rc3" >
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
-  <project path="buildroot-rk3588" name="rockchip_mirrors" revision="b8fcb1565ae1b649ad0b1112aa1c5ee2a77702df" upstream="buildroot-2021" remote="JeffyCN" />
+  <project path="buildroot-rk3588" name="rockchip_mirrors" revision="b8fcb1565ae1b649ad0b1112aa1c5ee2a77702df" upstream="buildroot-2021" remote="JeffyCN" >
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
@@ -32,7 +32,7 @@
   <project name="rk-rootfs-build" path="debian-bullseye" revision="0d21243a18a1d3df434e8b89fc2fffd9ec5f6f27" upstream="stable-debian-bullseye"/>
   <project name="ubuntu" path="ubuntu-20.04" revision="7c4ddf3dffd9e7aa59afaf17893ca96798f5ea4a" upstream="ubuntu20.04"/>
   <project name="ubuntu" path="ubuntu-22.04" revision="1392a251c8de424e326451088cf7a7f2bf667fba" />
-  <project name="device-custom" path="device/rockchip" revision="2c9e0a7de233bfc9240b21f28cf603e969c0f024" />
+  <project name="device-custom" path="device/rockchip" revision="2c9e0a7de233bfc9240b21f28cf603e969c0f024" >
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
