@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/rockchip-linux/" name="rockchip-linux" review="https://github.com/rockchip-linux/"/>
+  <remote fetch="https://github.com/Caesar-github/" name="Caesar" review="https://github.com/Caesar-github/"/>
+  <remote fetch="https://github.com/JeffyCN/" name="JeffyCN" review="https://github.com/JeffyCN/"/>
+  <remote fetch="https://github.com/Shaggy013/" name="Shaggy013" review="https://github.com/Shaggy013/"/>
+  
+
+ 
+  <default remote="Caesar" revision="master" sync-j="4"/>
+  
+
+  <project path="app/QLauncher" name="QLauncher" revision="dd5644dcdbcfa99569c52681efcee2f8b033ae8a" upstream="develop" />
+  <project path="app/aiserver" name="aiserver" />
+  <project path="app/eptz_demo" name="eptz_demo" />
+  <project path="app/multivideoplayer" name="multivideoplayer" />
+  <project path="app/network_manager" name="network_manager" />
+  <project path="app/qcamera" name="qcamera" />
+  <project path="app/qfm" name="qfm" />
+  <project path="app/qplayer" name="qplayer" />              
+  <project path="app/rkaiq_tool_server" name="rkaiq_tool_server" revision="884a93fb05376e4b9c357a63c3de59fc3320ac23" upstream="socket" />
+  <project path="app/qsetting" name="qsetting" revision="8137aca3945c1d5b59a01aa1d60790f003627175" upstream="Quartz64" remote="Shaggy013" />
+  <project path="buildroot-rk356x" name="buildroot" revision="e84615699d3a425a65b40015b5df993590ce0a85" upstream="2018.02-rc3" />
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project path="buildroot-rk3588" name="rockchip_mirrors" revision="b8fcb1565ae1b649ad0b1112aa1c5ee2a77702df" upstream="buildroot-2021" remote="JeffyCN" />
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="rk-rootfs-build" path="debian-buster" revision="27750613cec5497d4bf16384173a12039033fdaa" />
+  <project name="rk-rootfs-build" path="debian-bullseye" revision="0d21243a18a1d3df434e8b89fc2fffd9ec5f6f27" upstream="stable-debian-bullseye"/>
+  <project name="ubuntu" path="ubuntu-20.04" revision="7c4ddf3dffd9e7aa59afaf17893ca96798f5ea4a" upstream="ubuntu20.04"/>
+  <project name="ubuntu" path="ubuntu-22.04" revision="1392a251c8de424e326451088cf7a7f2bf667fba" />
+  <project name="device-custom" path="device/rockchip" revision="2c9e0a7de233bfc9240b21f28cf603e969c0f024" />
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.target_product" src="rk356x"/>
+  </project>
+  <project name="docs" />
+  <project name="alsa-config" path="external/alsa-config" />
+  <project name="avb" path="external/avb" />
+  <project name="ble_wificonfig" path="external/ble_wificonfig" />
+  <project name="bluetooth_bsa" path="external/bluetooth_bsa"  />
+  <project name="bluez-alsa" path="external/bluez-alsa" /> 
+  <project name="broadcom_bsa" path="external/broadcom_bsa" />
+  <project name="camera-engine-rkaiq" path="external/camera_engine_rkaiq" revision="1b74587c9107d9e469b05fcd8bcad4aae16911b5" remote="Shaggy013"/>
+  <project name="chromium" path="external/chromium" />
+  <project name="common_algorithm" path="external/common_algorithm" />
+  <project name="deviceio_release" path="external/deviceio_release" />
+  <project name="eq_drc_process" path="external/eq_drc_process" />
+  <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" />
+  <project name="libglCompositor" path="external/libglCompositor" />
+  <project name="libmali" path="external/libmali" />
+  <project name="linux-rga" path="external/linux-rga" upstream="im2d"/>
+  <project name="mpp" path="external/mpp" revision="9d9aeba533c75f659910c39291df77e1ae3d5193" upstream="develop" />
+  <project name="recovery" path="external/recovery" revision="develop" />
+  <project name="rk_pcba_test" path="external/rk_pcba_test" />
+  <project name="rkfacial" path="external/rkfacial" />
+  <project name="rknn-toolkit2" path="external/rknn-toolkit2" remote="rockchip-linux" />
+  <project name="rknpu2" path="external/rknpu2" />
+  <project name="rkscript" path="external/rkscript" />
+  <project name="rktoolkit" path="external/rktoolkit" />
+  <project name="rkupdate" path="external/rkupdate" />
+  <project name="rkwifibt" path="external/rkwifibt" />
+  <project name="rockit" path="external/rockit" />
+  <project name="bin" path="external/security/bin" />
+  <project name="rk_tee_user" path="external/security/rk_tee_user" revision="develop-next" /> 
+  <project name="uac_app" path="external/uac_app" />
+  <project name="uvc_app" path="external/uvc_app"/>
+  <project name="kernel-4.19" path="kernel-4.19" revision="bedbbcb4e91d9986d1fe0916f3c97eb66e6ada48" upstream="Quartz64" remote="Shaggy013" />
+  <project name="kernel-5.10" path="kernel-5.10" revision="788eb842f8eec41caa922e4f7695288f5a16b4f0" upstream="Quartz64" remote="Shaggy013" />
+  <project name="gcc" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" revision="3dbb0ac74aedd7b4d2091463a1a189fcef5dbede" upstream="Quartz64" remote="Shaggy013" />
+  <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" />
+  <project name="rkbin" />
+  <project name="tools" path="tools" revision="e54a31703d423c393a23d967213fe6b75229f64c" upstream="Quartz64" remote="Shaggy013">
+    <linkfile dest="tools/windows/RKDevTool/RKDevTool_Release/config.cfg" src="windows/RKDevTool/RKDevTool_Release/rk356x-config.cfg"/>
+    <linkfile dest="tools/windows/RKDevTool/rockdev/package-file" src="windows/RKDevTool/rockdev/rk356x-package-file"/>
+    <linkfile dest="tools/windows/RKDevTool/rockdev/mkupdate.bat" src="windows/RKDevTool/rockdev/rk356x-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk356x-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk356x-package-file"/>
+  </project>
+  <project name="u-boot" upstream="next-dev" />
+   <!--RK3588-packages-->
+   <project name="drm-cursor" name="external/drm-cursor" remote="JeffyCN" />
+   <project path="rkwifibt-app" name="external/rkwifibt-app" upstream="Quartz64" remote="Shaggy013" />
+   <project path="rockchip-test" name="external/rockchip-test" upstream="Quartz64" remote="Shaggy013" />
+   <project name="xorg-xserver" path="external/xserver" revision="fe6b8809881a2577c462d089176c56f686c50f1f" upstream="1.20.4" remote="JeffyCN" />
+
+  <!--yocto project-->
+  <project name="yocto-conf" path="yocto/build/conf" revision="a63afceec15834ecad9c710ed5dafaec458e1024" upstream="honister" remote="JeffyCN">	  
+  </project>
+  <include name="yocto.xml" />
+</manifest>

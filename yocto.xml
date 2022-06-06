@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <notice>Your sources have been sync'd successfully.</notice>
+  <remote fetch="https://github.com/OSSystems" name="browser"/>
+  <remote fetch="https://github.com/kraj" name="clang"/>
+  <remote fetch="https://github.com/JeffyCN/" name="github"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="https://github.com/meta-qt5" name="qt5"/>
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  
+  <project dest-branch="master" name="meta-browser" path="yocto/meta-browser" remote="browser" revision="e232c2e21b96dc092d9af8bea4b3a528e7a46dd6"/>
+  <project dest-branch="honister" name="meta-clang" path="yocto/meta-clang" remote="clang" revision="088904d40231d9e099c2f5039cd3c2bc47d332d1"/>
+  <project dest-branch="honister" name="meta-openembedded" path="yocto/meta-openembedded" remote="oe" revision="9a0caf5b09e14a28a54c3f8524d97530aeb8152c"/>
+  <project dest-branch="honister" name="meta-qt5" path="yocto/meta-qt5" remote="qt5" revision="4837db1d965c51e4a2c5971e6a126c896e5b401a"/>
+  <project dest-branch="honister" name="meta-rockchip" path="yocto/meta-rockchip" remote="github" revision="ddd47d6b57d035655bd78d405e3c7035a48837f9"/>
+  <project dest-branch="honister" name="poky" path="yocto/poky" remote="yocto" revision="17ea8b493d643c966beea306114ffc3a8d809204">
+    <linkfile dest="yocto/scripts" src="scripts"/>
+    <linkfile dest="yocto/bitbake" src="bitbake"/>
+    <linkfile dest="yocto/meta-poky" src="meta-poky"/>
+    <linkfile dest="yocto/.templateconf" src=".templateconf"/>
+    <linkfile dest="yocto/oe-init-build-env" src="oe-init-build-env"/>
+    <linkfile dest="yocto/oe-init-build-env" src="oe-init-build-env"/>
+
+  </project>
+  <extend-project dest-branch="honister" name="yocto-conf" path="yocto/build/conf" remote="github" revision="a63afceec15834ecad9c710ed5dafaec458e1024"/>
+</manifest>
