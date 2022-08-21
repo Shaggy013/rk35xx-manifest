@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://android.googlesource.com" name="aosp"/>
+  <remote fetch="http://gitlab.com/rockchip_android_s" name="rk"/>
+  <remote fetch="http://gitlab.com/rockchip_android_s" name="rk29"/>
+  <remote fetch="http://gitlab.com/rockchip_android_s" name="rk_legacy"/>
+</manifest>

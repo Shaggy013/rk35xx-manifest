@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- remote repo and gerrit review -->
+  <include name="remote-raxda.xml" />
+
+  <!-- aosp default repository-->
+  <include name="default.xml" />
+
+  <!-- remove project -->
+  <include name="remove_s.xml" />
+
+  <!-- rk checkout new default repository-->
+ <include name="include/Rockchip-sdk-rkr6.xml" />
+</manifest>
